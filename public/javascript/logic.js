@@ -65,11 +65,11 @@ function drawChart() {
 
   var data = google.visualization.arrayToDataTable([
     ['Task', 'Hours per Day'],
-    ['Pubic Sale', 55],
+    ['Pubic Sale', 60],
     ['Devolpment Fund', 20],
-    ['Pre-Sale',  10],
     ['Bounties', 7],
-    ['Management', 5],
+		['Management', 8],
+		['Advisors', 2],
     ['Airdrop', 3]
   ]);
 
