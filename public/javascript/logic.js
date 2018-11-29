@@ -88,6 +88,7 @@ function drawChart() {
 }
 
 
+//Particles
 
 $(document).ready(function() {
     Particles.init({
@@ -98,7 +99,7 @@ $(document).ready(function() {
             {
                 breakpoint: 1680,
                 options: {
-                    maxParticles: 30,
+                    maxParticles: 0,
                     color: ['#222e40', '#8da4be'],
                     sizeVariations: 3,
                     minDistance: 90,

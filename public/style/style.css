@@ -8,10 +8,10 @@ body {
     text-align: center;
 }
 
-canvas {
+/* canvas {
     position: absolute;
     z-index: -1;
-}
+} */
 
 #section-1 {
     overflow: hidden;
@@ -206,31 +206,36 @@ h5 {
 }
 
 .percentage {
-    font-size: 60px;
+    font-size: 80px;
     font-family: 'Roboto', sans-serif;
     
 }
 
 .percents {
-    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+    width: 80%;
     border: 1px solid white;
     border-radius: 10px;
-    height: 180px;
+    height: 230px;
+    margin-top: 20px;
 }
 
 
 #piechart {
-    position: absolute;
-    width: 500px;
-    height: 500px;
+    /* position: absolute; */
+    width: 1000px;
+    height: 1000px;
     padding: none;
-    margin-left: -105px;
-    margin-top: -40px;
-    display: none;
+    margin-top: -100px;
+    margin-bottom: -150px;
+    margin-left: -60px;
+    /* display: none; */
 }
-
-/* svg {
-    position: static;
+/* 
+svg {
+    width: 100%;
+    height: 100%;
 } */
 
 .pad {
@@ -317,7 +322,7 @@ h5 {
 }
 
 .sm-txt {
-    font-size: 11px;
+    font-size: 16px;
     margin-top: -10px;
 }
 
@@ -347,15 +352,6 @@ h5 {
 .navbar-toggler {
     border: none!important;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -509,6 +505,8 @@ h5 {
 }
 
 
+
+
 #foundpro {
     /* margin-left: 200px; */
 }
@@ -528,7 +526,6 @@ h5 {
     margin-bottom: 70px;
     -webkit-transition: background-color .4s;
     transition: background-color .4s;
-    margin-left: -365px;
     letter-spacing: 1px;
 }
 
@@ -717,6 +714,10 @@ h5 {
     margin-top: -20px;
 }
 
+#faq {
+    margin-top: 20px;
+}
+
 /* svg {
     width: 100%;
     height: 100%;
@@ -725,10 +726,11 @@ h5 {
 } */
 
 
-@media only screen and (min-width: 1024px) {
-    #piechart {
+@media only screen and (min-width: 1440px) {
+    /* #piechart {
         display: block;
-    }
+    } */
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -736,6 +738,24 @@ h5 {
         display: none!important;
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    #piechart {
+        width: 850px;
+        height: 850px;
+    }
+
+    .dot {
+        margin-left: 40px!important;
+    }
+
+    .gps_ring {
+        margin-left: 44px!important;
+    }
+
+}
+
+
 
 /* @media only screen and (max-width: 1440px) {
 } */
@@ -761,5 +781,52 @@ h5 {
     .percents {
         border: none;
         text-align: center;
+        padding-left: none!important;
+    }
+
+    .center-ev {
+        text-align: center!important;
+    }
+
+    .btttn {
+        margin: none;
+    }
+
+    #piechart {
+        display: none;
+    }
+
+    .dot {
+        margin-left: 20px!important;
+    }
+
+    .gps_ring {
+        margin-left: 28px!important;
     }
 }
+
+
+@media only screen and (max-width: 425px) {
+   .dot {
+       display: none;
+   }
+   .gps_ring {
+       display: none;
+   }
+
+   .map-txt {
+       text-align: center!important;
+   }
+   .filler {
+       display: none;
+   }
+   .road-obj {
+       margin-top: 10px;
+       margin-bottom: 10px;
+   }
+   .pad {
+       padding: none!important;
+   }
+
+}
+
