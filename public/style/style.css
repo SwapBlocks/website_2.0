@@ -5,17 +5,25 @@ body {
 
 #icons {
     /*margin-top: 20px;*/
-    text-align: center;
+    text-align: center!important;
+    margin-top: 20px;
 }
 
-/* canvas {
+.particles {
     position: absolute;
     z-index: -1;
-} */
+    /* background-color: red; */
+    height: 1000px;
+    /* top: 0;
+    left: 0; */
+    opacity: 0.8;
+}
+
 
 #section-1 {
     overflow: hidden;
     background: transparent;
+    padding-bottom: 60px;
 }
 
 .fab {
@@ -135,7 +143,11 @@ h5 {
 #nav {
     padding: 20px;
     background-color: white;
-    
+}
+
+#filler {
+    background-color: white;
+    height: 80px;
 }
 
 #nav-ul {
@@ -148,6 +160,16 @@ h5 {
 .menu-item:hover {
     color: #8da4be!important;
     border-top: 1px solid #8da4be;
+}
+
+.menu-item-2 {
+    color: inherit;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.menu-item-2:hover {
+    color: #8da4be!important;
 }
 
 .btn-nav {
@@ -168,6 +190,22 @@ h5 {
     background-color: #8da4be;
 }
 
+.btn-nav-2 {
+    width: 60%;
+    height: auto;
+    font-size: 20px!important;
+    background-color: #222e40;
+    color: white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.btn-nav-2:hover {
+    background-color: #8da4be;
+}
+
 .section {
     height: auto;
     width: auto;
@@ -177,10 +215,13 @@ h5 {
 
 .section-2 {
     background-color: #222e40;
+
 }
 
 #section-2 {
     background-color: #222e40;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 .dark-font {
@@ -263,7 +304,7 @@ svg {
     height: 40px;
     width: 40px;
     margin-top: 315px;
-    left: 20%;
+    left: 21%;
     position: absolute;
     -webkit-animation: pulsate 1s ease-out;
     -webkit-animation-iteration-count: infinite; 
@@ -363,10 +404,11 @@ svg {
 
 .founder-pro {
     border: 2px solid white;
-    padding: auto;
-    margin: 40px;
-    width: auto;
+    margin-bottom: 50px;
+    width: 60%;
+    padding: 1%;
 }
+
 
 .div-bar {
     border-bottom: 1px solid white;
@@ -508,11 +550,11 @@ svg {
 
 
 #foundpro {
-    /* margin-left: 200px; */
+    float: right;
 }
 
 #foundpro2 {
-    /* margin-right: 200px; */
+   
 }
 
 .btttn {
@@ -527,6 +569,8 @@ svg {
     -webkit-transition: background-color .4s;
     transition: background-color .4s;
     letter-spacing: 1px;
+    float: left;
+    margin-left: 29.5%;
 }
 
 .btttn:hover {
@@ -612,9 +656,13 @@ svg {
 }
   
 #logo1 {
-    width: 30%;
+    /* width: 30%;
     height: auto;
     margin-left: 36%;
+    margin-top: 10%; */
+    display: block;
+    margin: auto;
+    width: 35%;
     margin-top: 10%;
 }
 
@@ -628,20 +676,29 @@ svg {
 }
 
 #p-2 {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+#section-3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #section-4 {
     padding-bottom: 50px;
+    padding-top: 80px;
 }
 
 #section-5 {
     background-color: #222e40;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 #section-6 {
     background-color: white;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 #faqp {
@@ -657,6 +714,35 @@ svg {
     margin-left:36.5%;
 } */
 
+#mobile-menu-bottom {
+    margin-bottom: 100%;
+}
+
+#mobile-menu-button {
+    font-size: 30px;
+    color: #222e40;
+    padding-top: 3%;
+    padding-left: 8%;
+}
+#mobile-menu-button-2 {
+    font-size: 33px;
+    color: #222e40;
+    padding-top: 3%;
+    padding-left: 8%;
+}
+
+#mobile-nav-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+
+
 #dist {
     margin-top: 20px;
 }
@@ -666,7 +752,8 @@ svg {
 }
 
 #coin-dis {
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 150px;
 }
 
 #advisors {
@@ -679,7 +766,7 @@ svg {
 }
 
 .advisor-p {
-    height: 175px;
+    height: 240px;
     border-bottom: 1px solid white;
 }
 
@@ -733,9 +820,18 @@ svg {
 
 }
 
-@media only screen and (max-width: 1024px) {
-    #nav {
-        display: none!important;
+@media only screen and (max-width: 1199px) {
+    .dot {
+        margin-left: 40px!important;
+    }
+
+    .gps_ring {
+        margin-left: 44px!important;
+    }
+
+    .advisor-p {
+        height: auto!important;
+        padding-bottom: 10px;
     }
 }
 
@@ -752,30 +848,55 @@ svg {
     .gps_ring {
         margin-left: 44px!important;
     }
+    #foundpro {
+        float: none;
+    }
+    .founder-pro {
+        margin-left: 20%;
+    }
+  
+}
+
+@media only screen and (max-width: 991px) {
+    .dot {
+        margin-left: 20px!important;
+    }
+
+    .gps_ring {
+        margin-left: 29px!important;
+    }
+
+    .percents {
+        border: none;
+    }
 
 }
 
 
 
-/* @media only screen and (max-width: 1440px) {
-} */
+@media only screen and (min-width: 767px) {
+    #mobile-nav-section {
+        display: none;
+    }
+    #mobile-nav {
+        display: none;
+    }
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .title {
-        border: none;
         text-align: center;
-        text-decoration: underline;
         padding: none;
         margin: auto;
         margin-top: 20px;
+        margin-bottom: 40px!important;
     }
 
     .title-2 {
-        border: none;
         text-align: center;
-        text-decoration: underline;
         padding: none;
         margin: auto;
+        margin-bottom: 40px!important;
     }
 
     .percents {
@@ -796,37 +917,78 @@ svg {
         display: none;
     }
 
+    #nav {
+        display: none;
+    }
+    #logo1 {
+        width: 60%;
+        margin-top: 15%;
+        margin-bottom: 7%;
+    }
     .dot {
-        margin-left: 20px!important;
+        display: none;
+    }
+    .gps_ring {
+        display: none;
     }
 
-    .gps_ring {
-        margin-left: 28px!important;
+    .map-txt {
+        text-align: center!important;
+    }
+
+    .filler {
+        display: none;
+    }
+
+    .road-obj {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
 
 @media only screen and (max-width: 425px) {
-   .dot {
-       display: none;
-   }
-   .gps_ring {
-       display: none;
-   }
-
-   .map-txt {
-       text-align: center!important;
-   }
-   .filler {
-       display: none;
-   }
-   .road-obj {
-       margin-top: 10px;
-       margin-bottom: 10px;
-   }
+  
+   
    .pad {
        padding: none!important;
    }
 
+   .btttn {
+       margin-left: 35%;
+   }
+   #slogan {
+        margin-bottom: 10%;
+    }   
+    #home-button-1 {
+        margin-bottom: 2%;
+    }
+    /* .title-mob {
+        underline: none;
+        border: 2px solid white;
+    } */
+}
+
+
+
+
+
+
+
+
+.fll {
+    margin-left: 40%;
+}
+
+.fllr {
+    margin-right: 80%;
+}
+
+.flls {
+    margin-left: 80%;
+}
+
+.fllrs {
+    margin-right: 100%;
 }
 
