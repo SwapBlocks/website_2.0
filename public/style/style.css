@@ -260,6 +260,7 @@ h5 {
     border-radius: 10px;
     height: 230px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -663,7 +664,7 @@ svg {
     display: block;
     margin: auto;
     width: 35%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #foundingtext {
@@ -722,6 +723,7 @@ svg {
     font-size: 30px;
     color: #222e40;
     padding-top: 3%;
+    padding-bottom: 3%;
     padding-left: 8%;
 }
 #mobile-menu-button-2 {
@@ -865,10 +867,11 @@ svg {
     .gps_ring {
         margin-left: 29px!important;
     }
-
     .percents {
-        border: none;
+        height: 95%;
+        width: 90%;
     }
+   
 
 }
 
@@ -881,6 +884,7 @@ svg {
     #mobile-nav {
         display: none;
     }
+   
 }
 
 @media only screen and (max-width: 767px) {
@@ -892,6 +896,11 @@ svg {
         margin-bottom: 40px!important;
     }
 
+    .percents {
+        height: 95%;
+        width: 45%;
+     }
+
     .title-2 {
         text-align: center;
         padding: none;
@@ -900,7 +909,7 @@ svg {
     }
 
     .percents {
-        border: none;
+     
         text-align: center;
         padding-left: none!important;
     }
@@ -955,13 +964,16 @@ svg {
    }
 
    .btttn {
-       margin-left: 35%;
+       margin-left: 37%;
    }
    #slogan {
         margin-bottom: 10%;
     }   
     #home-button-1 {
         margin-bottom: 2%;
+    }
+    .percents {
+        width: 90%;
     }
     /* .title-mob {
         underline: none;
