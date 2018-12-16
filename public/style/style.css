@@ -6,14 +6,14 @@ body {
 #icons {
     /*margin-top: 20px;*/
     text-align: center!important;
-    margin-top: 20px;
+		/*margin-bottom: 60px;*/
 }
 
 .particles {
     position: absolute;
     z-index: -1;
     /* background-color: red; */
-    height: 1000px;
+    height: 100%;
     /* top: 0;
     left: 0; */
     opacity: 0.8;
@@ -22,8 +22,10 @@ body {
 
 #section-1 {
     overflow: hidden;
-    background: transparent;
-    padding-bottom: 60px;
+    background: transparent; 
+		height: 100%;
+		padding-top: 1em;
+		padding-bottom: 1em;
 }
 
 .fab {
@@ -207,9 +209,8 @@ h5 {
 }
 
 .section {
-    height: auto;
+    height: 100%;
     width: auto;
-    margin-top: 50px;
 }
 
 

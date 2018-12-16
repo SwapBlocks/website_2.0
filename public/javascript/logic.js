@@ -161,9 +161,9 @@ function drawChart() {
     colors: ['#8da4be']
   };
 
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  //var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-  chart.draw(data, options);
+  //chart.draw(data, options);
 }
 
 
@@ -185,8 +185,8 @@ $(document).ready(function() {
                     maxParticles: 40,
                     connectParticles: false
                 }
-            }
-        ]
+						}
+				]
     });
 });
 
