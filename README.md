@@ -1,8 +1,4 @@
-# swapblocks
+# Swapblocks Website
 
-How to run:
 
-Open the 'app.js' file in your terminal.
-Use command 'node app'.
-Go to 'localhost:3000' in your browser.
-
+Welcome to swapblocks github! Please join us on discord!
