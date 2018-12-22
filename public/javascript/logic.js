@@ -94,7 +94,7 @@ $("#roadmap-2").click(function() {
     $("#mobile-menu-button-2").hide();
     $("#mobile-menu-button").show();
     $('html, body').animate({
-        scrollTop: $("#section-4").offset().top
+        scrollTop: $("#section-55").offset().top
     }, 1400);
 });
 
