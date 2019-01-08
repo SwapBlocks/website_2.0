@@ -24,9 +24,9 @@ body {
     margin-bottom: 3em;
     overflow: hidden;
     background: transparent; 
-		height: 100%;
-		padding-top: 1em;
-		padding-bottom: 5em;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 5em;
 }
 
 .fab {
