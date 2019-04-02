@@ -13,6 +13,12 @@ $("#about").click(function() {
     }, 1400);
 });
 
+$("#nav-repo").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#repo").offset().top
+    }, 1400);
+});
+
 $("#distribution").click(function() {
     $('html, body').animate({
         scrollTop: $("#coin-dis").offset().top
@@ -68,6 +74,15 @@ $("#home-2").click(function() {
     $("#mobile-menu-button").show();
     $('html, body').animate({
         scrollTop: $("#section-1").offset().top
+    }, 1400);
+});
+
+$("#nav-repo-2").click(function() {
+    $("#mobile-nav").slideUp();
+    $("#mobile-menu-button-2").hide();
+    $("#mobile-menu-button").show();
+    $('html, body').animate({
+        scrollTop: $("#repo").offset().top
     }, 1400);
 });
 

@@ -182,7 +182,7 @@ h5 {
 
 #nav {
     padding: 20px;
-    background-color: white;
+    background-color: transparent;
     -webkit-transition: box-shadow .5s, -webkit-box-shadow .5s, -moz-box-shadow .5s; 
 }
 
@@ -190,7 +190,8 @@ h5 {
     -webkit-box-shadow: 0 2px 3px rgba(119, 119, 119, 0.637);
     -moz-box-shadow: 0 2px 3px rgba(119, 119, 119, 0.637);
     box-shadow: 0 2px 3px rgba(119, 119, 119, 0.637);
-    -webkit-transition: box-shadow .5s, -webkit-box-shadow .5s, -moz-box-shadow .5s; 
+    background-color: white!important;
+    -webkit-transition: box-shadow .5s, -webkit-box-shadow .5s, -moz-box-shadow .5s, color .5s; 
 }
 
 #filler {
@@ -1085,6 +1086,9 @@ svg {
     .road-obj {
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .quote {
+        font-size: 1.5em;
     }
 }
 
