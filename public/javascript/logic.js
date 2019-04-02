@@ -231,12 +231,27 @@ $(document).ready(function() {
 
 
 $(document).ready( function() {
-    $('.percents').hide();
+    // $('.percents').hide();
 })
 
 $(document).scroll(function () {
     var y = $(this).scrollTop();
+    if (y > 10) {
+        $('#nav').addClass("shadow");
+    }else {
+        $('#nav').removeClass("shadow");
+    }
+    if (y > 10) {
+        $('#mobile-nav-section').addClass("shadow");
+    }else {
+        $('#mobile-nav-section').removeClass("shadow");
+    }
     if (y > 2200) {
         $('.percents').slideDown().fadeIn();
     }
 })
+
+
+
+
+

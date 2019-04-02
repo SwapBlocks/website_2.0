@@ -3,6 +3,11 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+html {
+    padding: 0;
+    margin: 0;
+}
+
 #icons {
     /*margin-top: 20px;*/
     text-align: center!important;
@@ -19,19 +24,33 @@ body {
     opacity: 0.8;
 }
 
+#ex-link {
+    color: inherit;
+}
+
+#ex-link:hover {
+    text-decoration: none;
+    color: rgba(255, 169, 9, 0.712);
+}
+
 
 #section-1 {
     margin-bottom: 3em;
     overflow: hidden;
     background: transparent; 
+<<<<<<< Updated upstream
     height: 100%;
 		padding-top: 5%;
+=======
+    height: 100vh;
+    padding-top: 5%;
+>>>>>>> Stashed changes
     padding-bottom: 5em;
 }
 
 .fab {
     font-size: 25px!important;
-    color: #222e40;
+    color: #222e40!important;
     padding: 8px;
     letter-spacing: 20px;
     -webkit-transition: color .4s;
@@ -58,16 +77,19 @@ iframe {
 }
 
 #footer {
-    color: rgb(185, 182, 182);
-    height: 3em;
+    color: rgb(172, 171, 171);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 238, 238);
 }
 
 .faq_container {
-    border-top: 1px solid;
+    border-top: 1px solid #8da4be;
 }
 
 .faq {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #8da4be;
     padding: 40px 10px 40px 10px;
 }
 
@@ -106,10 +128,12 @@ iframe {
     height: 100px;
     width: 100px;
     margin: 20px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .logo {
-		border-radius: 10%;
+	border-radius: 10%;
     height: 100px;
     width: auto;
     margin: 20px;
@@ -164,6 +188,14 @@ h5 {
 #nav {
     padding: 20px;
     background-color: white;
+    -webkit-transition: box-shadow .5s, -webkit-box-shadow .5s, -moz-box-shadow .5s; 
+}
+
+.shadow {
+    -webkit-box-shadow: 0 2px 3px rgba(119, 119, 119, 0.637);
+    -moz-box-shadow: 0 2px 3px rgba(119, 119, 119, 0.637);
+    box-shadow: 0 2px 3px rgba(119, 119, 119, 0.637);
+    -webkit-transition: box-shadow .5s, -webkit-box-shadow .5s, -moz-box-shadow .5s; 
 }
 
 #filler {
@@ -187,6 +219,26 @@ h5 {
     color: inherit;
     font-size: 20px;
     padding-top: 10px;
+}
+
+#asset-wallet {
+    padding-top: 70px;
+}
+
+#partnership-dev {
+    padding-top: 60px;
+}
+
+#fiat-con {
+    padding-top: 40px;
+}
+
+#new-asset {
+    padding-top: 40px;
+}
+
+#asset-man {
+    padding-top: 40px;
 }
 
 .menu-item-2:hover {
@@ -245,13 +297,14 @@ h5 {
 }
 
 .dark-font {
-    color: #222e40!important;
+    color: white;
 }
 
 .light-font {
-    color: #8da4be;
+    color: #8da4be!important;
     margin-top: -12px;
     margin-bottom: 2px;
+    font-size: 1.2em;
 }
 
 .text {
@@ -266,23 +319,39 @@ h5 {
     line-height: 1.8;
 }
 
+.text-3 {
+    color: #222e40;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#repo {
+    padding-bottom: 130px;
+}
+
 .percentage {
     font-size: 80px;
     font-family: 'Roboto', sans-serif;
-    
+    color: #222e40;
 }
 
 .percents {
     padding-top: 30px;
     text-align: center;
-    width: 80%;
-    border: 1px solid white;
+    width: 100%;
+    border: 1px solid #222e40;
     border-radius: 10px;
     height: 230px;
     margin-top: 20px;
     margin-bottom: 20px;
+    -webkit-box-shadow: 0 15px 10px rgba(119, 119, 119, 0.637);
+    -moz-box-shadow: 0 15px 10px rgba(119, 119, 119, 0.637);
+    box-shadow: 0 15px 10px rgba(119, 119, 119, 0.637);
 }
 
+.percent-cont {
+    margin-bottom: 30px;
+}
 
 #piechart {
     /* position: absolute; */
@@ -307,15 +376,17 @@ svg {
 .dot {
     height: 20px;
     width: 20px;
-    background-color: #222e40;
-    border: 2px solid #8da4be;
+    background-color: #8da4be;
+    border: 2px solid white;
     border-radius: 50%;
     display: inline-block;
     margin-left: 55px!important;
+    position: relative;
+    z-index: 2;
 }
 
 #dot-1 {
-    margin-top: 60px;
+    margin-top: 40px;
 
 }
 
@@ -324,7 +395,7 @@ svg {
     -webkit-border-radius: 30px;
     height: 40px;
     width: 40px;
-    margin-top: 315px;
+    margin-top: 280px;
     left: 21%;
     position: absolute;
     -webkit-animation: pulsate 1s ease-out;
@@ -348,7 +419,7 @@ svg {
 } */
 
 #dot-3 {
-    margin-top: 165px;
+    margin-top: 145px;
 }
 
 #dot-4 {
@@ -390,7 +461,7 @@ svg {
 
 
 .dotline {
-    border-right: 1px dashed #222e40;
+    border-right: 1px dashed white;
 }
 
 .dotline-2 {
@@ -402,7 +473,7 @@ svg {
 }
 
 .icon {
-    color: #8da4be;
+    color: #222e40;
     font-size: 35px;
     margin-bottom:20px;
 }
@@ -416,20 +487,33 @@ svg {
 }
 
 
-
-
 .lb-txt {
     font-size: 10px;
     color: #8da4be;
 }
 
 .founder-pro {
-    border: 2px solid white;
-    margin-bottom: 50px;
-    width: 60%;
+    border: 2px solid #222e40;
+    width: 100%;
     padding: 1%;
+    height: 300px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0 15px 10px rgba(119, 119, 119, 0.637);
+    -moz-box-shadow: 0 15px 10px rgba(119, 119, 119, 0.637);
+    box-shadow: 0 15px 10px rgba(119, 119, 119, 0.637);
 }
 
+
+.advisor {
+    border: 2px solid #222e40;
+    width: 100%;
+    padding: 1%;
+    height: 300px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0 15px 10px rgba(119, 119, 119, 0.637);
+    -moz-box-shadow: 0 15px 10px rgba(119, 119, 119, 0.637);
+    box-shadow: 0 15px 10px rgba(119, 119, 119, 0.637);
+}
 
 .div-bar {
     border-bottom: 1px solid white;
@@ -565,18 +649,9 @@ svg {
 
 .pro-name {
     font-size: 21px;
+    color: #222e40;
 }
 
-
-
-
-#foundpro {
-    float: right;
-}
-
-#foundpro2 {
-   
-}
 
 .btttn {
     height: 40px;
@@ -584,7 +659,7 @@ svg {
     border : 1px solid white;
     border-radius: 25px;
     color: white;
-    background-color: #8da4be;
+    background-color: #222e40;
     font-size: 12px;
     margin-bottom: 70px;
     -webkit-transition: background-color .4s;
@@ -595,7 +670,7 @@ svg {
 }
 
 .btttn:hover {
-    background-color: #222e40;
+    background-color: #8da4be;
 }
 
 .bttnn {
@@ -675,12 +750,44 @@ svg {
 #title-4 {
     margin-bottom: 22px;
 }
+
+#title-2-2 {
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+
+
+.quote {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding: 0 10% 0 10%;
+    
+}
+
+.section-2 h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section-2 p {
+    color: white;
+}
+
+.section-2 p strong {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Signika Negative', sans-serif;
+}
+
   
 #logo1 {
-    /* width: 30%;
-    height: auto;
-    margin-left: 36%;
-    margin-top: 10%; */
     display: block;
     margin: auto;
     width: 35%;
@@ -694,6 +801,7 @@ svg {
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
+    color: #222e40;
 }
 
 #p-2 {
@@ -711,13 +819,13 @@ svg {
 }
 
 #section-5 {
-    background-color: #222e40;
+    background-color: white;
     padding-top: 80px;
     padding-bottom: 50px;
 }
 
 #section-6 {
-    background-color: white;
+    background-color: #222e40;
     padding-top: 80px;
     padding-bottom: 50px;
 }
@@ -766,7 +874,10 @@ svg {
 #section-55 {
     padding-top: 5em;
     display: none;
+    background-color: #222e40;
 }
+
+
 
 #dist {
     margin-top: 20px;
@@ -782,7 +893,12 @@ svg {
 }
 
 #advisors {
-    margin-top: 75px;
+    margin-top: 125px;
+}
+
+.bottom-pro {
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .advisor-t {
@@ -807,7 +923,7 @@ svg {
 
 #inputEmail1 {
     background-color: transparent;
-    border: 1px solid rgb(206, 206, 206)!important;
+    border: 1px solid #222e40;
     font-size: 12px;
     width: 40%;
     margin-top: 30px;
@@ -815,8 +931,13 @@ svg {
 }
 
 #inputEmail1:focus {
-    border: 1px solid rgb(206, 206, 206);
-    color: white;
+    color: #222e40;
+    border: 1px solid #222e40!important;
+}
+
+#inputEmail1:active {
+    color: #222e40;
+    border: 1px solid #222e40;
 }
 
 #copy-txt {
@@ -830,20 +951,6 @@ svg {
     margin-top: 20px;
 }
 
-/* svg {
-    width: 100%;
-    height: 100%;
-    margin: auto!important;
-    padding: none!important;
-} */
-
-
-@media only screen and (min-width: 1440px) {
-    /* #piechart {
-        display: block;
-    } */
-
-}
 
 @media only screen and (max-width: 1199px) {
     .dot {
@@ -873,11 +980,8 @@ svg {
     .gps_ring {
         margin-left: 44px!important;
     }
-    #foundpro {
-        float: none;
-    }
     .founder-pro {
-        margin-left: 20%;
+        /* margin-left: 20%; */
     }
   
 }
@@ -894,11 +998,22 @@ svg {
         height: 95%;
         width: 90%;
     }
+    .bottom-pro {
+        padding: 0 15px 0 15px;
+    }
    
+    #meetadvisors {
+        margin-top: 60px;
+    }
 
+    #section-7 h3 {
+        margin-top: 50px;
+    }
+    
+    #logo1 {
+        margin-top: 10%;
+    }
 }
-
-
 
 @media only screen and (min-width: 767px) {
     #mobile-nav-section {
@@ -907,6 +1022,7 @@ svg {
     #mobile-nav {
         display: none;
     }
+    
    
 }
 
@@ -936,12 +1052,6 @@ svg {
         margin-bottom: 40px!important;
     }
 
-    .percents {
-     
-        text-align: center;
-        padding-left: none!important;
-    }
-
     .center-ev {
         text-align: center!important;
     }
@@ -959,7 +1069,7 @@ svg {
     }
     #logo1 {
         width: 60%;
-        margin-top: 15%;
+        /* margin-top: 20%; */
         margin-bottom: 7%;
     }
     .dot {
