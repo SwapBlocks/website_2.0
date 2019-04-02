@@ -38,13 +38,8 @@ html {
     margin-bottom: 3em;
     overflow: hidden;
     background: transparent; 
-<<<<<<< Updated upstream
-    height: 100%;
-		padding-top: 5%;
-=======
     height: 100vh;
     padding-top: 5%;
->>>>>>> Stashed changes
     padding-bottom: 5em;
 }
 
